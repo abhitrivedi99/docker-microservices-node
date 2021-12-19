@@ -1,31 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bus-depl
+    name: bus-depl
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: bus
-  template:
-    metadata:
-      labels:
-        app: bus
-    spec:
-      containers:
-        - name: bus
-          image: abhitrivedi99/bus:latest
-          imagePullPolicy: Always
+    replicas: 1
+    selector:
+        matchLabels:
+            app: bus
+    template:
+        metadata:
+            labels:
+                app: bus
+        spec:
+            containers:
+                - name: bus
+                  image: abhitrivedi99/bus:latest
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: bus-srv
+    name: bus-srv
 spec:
-  selector:
-    app: bus
-  ports:
-    - name: bus
-      protocol: TCP
-      port: 4005
-      targetPort: 4005
+    selector:
+        app: bus
+    ports:
+        - name: bus
+          protocol: TCP
+          port: 4005
+          targetPort: 4005
