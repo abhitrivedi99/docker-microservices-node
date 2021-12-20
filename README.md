@@ -17,6 +17,7 @@ Here's the dependency installation information:
 After installing dependencies run the following command:
 ```
 - minikube start
+- minikube addons enable ingress
 - skaffold dev
 ```
 
