@@ -11,7 +11,8 @@ Here's the dependency installation information:
 2. https://docs.docker.com/engine/install/
 3. https://minikube.sigs.k8s.io/docs/start/
 4. https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
-5. https://skaffold.dev/docs/install/#standalone-binary
+5. https://kubernetes.github.io/ingress-nginx/deploy/
+6. https://skaffold.dev/docs/install/#standalone-binary
 
 After installing dependencies run the following command:
 ```
